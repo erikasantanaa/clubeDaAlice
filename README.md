@@ -1,8 +1,9 @@
-<img src="../assets/img01.png" width=" 700px">
-<img src="../assets/img02.png" width=" 700px">
-<img src="../assets/img03.png" width=" 700px">
-<img src="../assets/img04.png" width=" 700px">
 # Quasar App (clubalice)
+
+![./src/assets/img01.png](./src/assets/img01.png)
+![./src/assets/img02.png](./src/assets/img02.png)
+![./src/assets/img03.png](./src/assets/img03.png)
+![./src/assets/img04.png](./src/assets/img04.png)
 
 A Quasar Framework app
 
@@ -29,7 +30,3 @@ npm run lint
 ```bash
 quasar build
 ```
-
-### Customize the configuration
-
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
