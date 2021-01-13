@@ -1,40 +1,12 @@
 <template>
   <q-page class="bg-grey-2">
-    <div class="row top-center flex-center bg-secondary justify-center"
-      style="height: 350px">
+    <div class="row top-center flex-center bg-secondary justify-center" style="height: 350px ">
       <q-img style="height: 350px" src="../assets/BANNER-SITE.jpg" />
     </div>
 
     <div class="row justify-center">
-      <q-card class="col-5 q-my-lg q-ml-lg q-mr-md bg-grey-2" flat>
-        <div>
-          <q-img
-            style="height: 220px"
-            class="image-border"
-            src="../assets/banner-make.jpg"
-          />
-        </div>
-        <q-card-section>
-          <div class="text-h6 q-mt-sm q-mb-xs text-secondary">
-            Empreendedorismo do batom
-          </div>
-          <div class="text-caption text-grey">
-            Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa
-            as pessoas mais interessantis. Casamentiss faiz malandris se pirulitá.
-            Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
-          </div>
-        </q-card-section>
-
-        <q-card-actions class="justify-end">
-          <q-btn outline rounded color="secondary" label="Ver Todos" />
-          <q-btn outline rounded color="secondary" label="Leia Mais +" />
-          <q-icon color="secondary" size="xs" class="q-ml-md" name="fab fa-facebook-f" />
-
-          <q-icon color="secondary" size="xs" class="q-ml-md" name="fab fa-google-plus-g" />
-          <q-icon color="secondary" size="xs" class="q-ml-md" name="fab fa-twitter" />
-          <q-icon color="secondary" size="xs" class="q-ml-md" name="fab fa-pinterest-p" />
-        </q-card-actions>
-      </q-card>
+      <!-- props-->
+      <demo-card :imagem="img1" :title="titulo1" :text="texto1" :link1="link1" :link2="link2" />
 
       <q-card flat class=" col-5 q-my-lg q-mr-lg q-ml-md bg-grey-2">
         <q-card-section class="q-pa-none">
@@ -206,8 +178,21 @@
 </template>
 
 <script>
+import DemoCard from 'src/components/DemoCard.vue'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: {
+    DemoCard
+  },
+  data () {
+    return {
+      img1: 'https://www.clubedaalice.com.br/wp-content/uploads/2020/05/pot-blog-1.jpg',
+      titulo1: 'Empreendedorismo do batom',
+      texto1: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis. Casamentiss faiz malandris se pirulitá.Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!',
+      link1: '/ShortNews',
+      link2: '/NewsPapers'
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>
